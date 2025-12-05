@@ -14,20 +14,19 @@ We utilize efficient "hybrid" architectures; specifically **the Siamese Network 
 ## 📂 Repository Structure
 
 ```bash
-├── data/                        # Place your dataset files here (exactly as downloaded)
-│   ├── train_subtask1.csv       
-│   ├── train_subtask2a.csv      
-│   ├── train_subtask2b.csv      # Main aggregated file used by our Subtask 2B model
-│   ├── train_subtask2b_detailed.csv
-│   └── train_subtask2b_user_disposition_change.csv
 ├── src/                         # Source code for training and inference
 │   ├── subtask1_longitudinal.py 
 │   ├── subtask2a_forecasting.py 
-│   └── subtask2b_disposition.py # Handles the list-parsing from train_subtask2b.csv
-├── splits_subtask1/             # Generated automatically by the scripts
-├── splits_subtask2a/
-├── splits_subtask2b/
+│   └── subtask2b_disposition.py 
 ├── predictions/                 # Output CSVs for submission
+├── splits_subtask1/             # Generated automatically
+├── splits_subtask2a/            # Generated automatically
+├── splits_subtask2b/            # Generated automatically
+├── train_subtask1.csv           # Raw Dataset
+├── train_subtask2a.csv          # Raw Dataset
+├── train_subtask2b.csv          # Raw Dataset (Main file for Subtask 2B)
+├── train_subtask2b_detailed.csv
+├── train_subtask2b_user_disposition_change.csv
 ├── README.md                    # Project documentation
 └── requirements.txt             # Python dependencies
 
