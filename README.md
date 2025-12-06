@@ -103,14 +103,28 @@ cd SemEval-2026-Task2
 pip install -r requirements.txt
 ```
 
-### Running the Subtasks
-Each subtask is self-contained in its respective notebook for reproducibility.
 
-1.  **Subtask 1:** Open `notebooks/subtask1.ipynb`. This script handles the "Seen/Unseen" user split automatically.
-2.  **Subtask 2A:** Open `notebooks/subtask2a.ipynb`. Ensure `CCC_LOSS = True` to replicate our best results.
-3.  **Subtask 2B:** Open `notebooks/subtask2b.ipynb`. This implements the `HeadTailDataset` class for long-context sampling.
+1.  **Subtask 1:**
+    ```bash
+    python src/subtask1_longitudinal.py
+    ```
+    *This script handles the "Seen/Unseen" user split automatically.*
 
+2.  **Subtask 2A:**
+    ```bash
+    python src/subtask2a_forecasting.py
+    ```
+    *This executes the V5 architecture (DeBERTa + Projection) using CCC Loss to replicate our best results.*
+
+3.  **Subtask 2B:**
+    ```bash
+    python src/subtask2b_disposition.py
+    ```
+    *This implements the "Bifurcated Leviathan" model with Head-Tail sampling.*
+    
 ---
+
+
 
 ## 🤝 Acknowledgements & Credits
 
