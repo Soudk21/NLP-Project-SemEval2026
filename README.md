@@ -19,7 +19,8 @@ We utilize efficient "hybrid" architectures; specifically **the Siamese Network 
 ├── src/                         # Source code for training and inference
 │   ├── subtask1_longitudinal.py 
 │   ├── subtask2a_forecasting.py 
-│   └── subtask2b_disposition.py 
+│   └── subtask2b_disposition.py
+├── LICENSE
 ├── predictions/                 # Output CSVs for submission
 ├── splits_subtask1/             # Generated automatically
 ├── splits_subtask2a/            # Generated automatically
