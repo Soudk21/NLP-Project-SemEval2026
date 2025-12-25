@@ -14,6 +14,8 @@ We utilize efficient "hybrid" architectures; specifically **the Siamese Network 
 ## 📂 Repository Structure
 
 ```bash
+├── paper/
+│   ├── SemEval_Paper.pdf
 ├── src/                         # Source code for training and inference
 │   ├── subtask1_longitudinal.py 
 │   ├── subtask2a_forecasting.py 
